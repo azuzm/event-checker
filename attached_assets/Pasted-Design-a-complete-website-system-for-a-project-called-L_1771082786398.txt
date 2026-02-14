@@ -1,0 +1,184 @@
+Design a complete website system for a project called LocalLoop — Hyperlocal Event Discovery & Community Platform.
+
+This should be a functional website MVP, not a presentation and not a mobile app.
+Focus only on practical, realistic features that can be built for a hackathon.
+
+Provide a complete structured website development plan with clear sections.
+
+Write in professional, technical, structured format.
+
+Project Description
+
+LocalLoop is a location-based web platform that helps users discover events and community updates happening nearby and connect with others attending those events.
+
+The website acts as a digital community notice board combined with personalized local event discovery.
+
+Users can browse nearby events, filter them, mark interest, view attendees, and interact with people attending.
+Event organizers can create and manage events.
+
+The goal is to centralize local information, improve event participation, and enable community networking.
+
+Core Features (ONLY include these — do not add extras)
+
+Location-based event listing
+
+Event filtering system
+
+Save / mark interest in events
+
+Community notice board
+
+Event creation and management
+
+User authentication and profiles
+
+Attendee visibility and basic networking
+
+Basic notifications
+
+Do NOT include:
+AI recommendations, payments, ticketing, gamification, swipe systems, advanced analytics, AR, or mobile app features.
+
+Required Output Structure
+
+Generate detailed sections for each of the following:
+
+1. Website Overview
+
+Purpose, goals, and main functionality.
+
+2. User Roles
+
+Define system roles such as:
+
+Visitor
+
+Registered user
+
+Event organizer
+
+Admin
+
+Explain permissions for each.
+
+3. Website Pages and Navigation Structure
+
+Describe every page including:
+
+Home page
+
+Event listing page
+
+Event detail page
+
+Notice board page
+
+Create event page
+
+User profile dashboard
+
+Login / register pages
+
+Explain what appears on each page and user actions available.
+
+4. User Flow (Step-by-Step)
+
+Explain complete journeys:
+
+New user registration
+
+Discovering events
+
+Saving or joining an event
+
+Creating an event
+
+Viewing attendees
+
+Posting notice
+
+5. Database Design
+
+Provide structured database schema including tables such as:
+
+Users
+
+Events
+
+Interests / Saved events
+
+Notices
+
+Connections / attendees
+
+Include important fields for each table.
+
+6. Backend System Design
+
+Explain:
+
+API structure
+
+Authentication handling
+
+Event management logic
+
+Location filtering logic
+
+Notification handling
+
+7. Frontend Structure
+
+Explain:
+
+UI components
+
+Page layout
+
+State management
+
+Interaction design
+
+8. Tech Stack Recommendation
+
+Suggest realistic technologies for:
+
+Frontend
+
+Backend
+
+Database
+
+Authentication
+
+Location services
+
+Hosting
+
+9. Basic System Architecture Flow
+
+Explain how data moves between frontend, backend, and database.
+
+10. MVP Development Roadmap
+
+Step-by-step build order from scratch to deployment.
+
+11. Future Scalable Improvements (optional but realistic)
+
+Only practical upgrades — no futuristic ideas.
+
+Output Style Requirements
+
+Structured headings and subheadings
+
+Clear technical explanations
+
+No emojis
+
+No marketing language
+
+No presentation format
+
+Focus on actual implementation
+
+Generate the full website system design now.
