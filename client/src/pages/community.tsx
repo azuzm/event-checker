@@ -44,13 +44,13 @@ export default function Community() {
       {/* Create Post Widget */}
       <div className="bg-card p-6 rounded-3xl border border-border shadow-sm">
         <form onSubmit={handleSubmit} className="space-y-4">
-          <Textarea 
+          <Textarea
             placeholder="What's happening in the neighborhood?"
             className="border-0 bg-muted/30 focus:bg-background resize-none min-h-[100px] text-lg p-4 rounded-xl"
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
-          
+
           <div className="flex flex-col sm:flex-row gap-3 pt-2">
             <Select value={category} onValueChange={setCategory}>
               <SelectTrigger className="w-full sm:w-[180px] h-10 rounded-full">
@@ -63,15 +63,15 @@ export default function Community() {
               </SelectContent>
             </Select>
 
-            <Input 
-              placeholder="Add location (optional)" 
+            <Input
+              placeholder="Add location (optional)"
               className="h-10 rounded-full flex-1"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
             />
 
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               disabled={createMutation.isPending || !content.trim()}
               className="rounded-full px-6 bg-primary hover:bg-primary/90"
             >

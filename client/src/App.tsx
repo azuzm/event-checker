@@ -48,7 +48,7 @@ function Router() {
       <Switch>
         <Route path="/" component={Landing} />
         {/* Redirect all other routes to login via the landing page or auth guard */}
-        <Route component={Landing} /> 
+        <Route component={Landing} />
       </Switch>
     );
   }

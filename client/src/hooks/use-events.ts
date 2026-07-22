@@ -4,14 +4,14 @@ import { apiRequest } from "@/lib/queryClient";
 
 export function useEvents(filters?: { category?: string; search?: string }) {
   const queryKey = [api.events.list.path, filters?.category, filters?.search].filter(Boolean);
-  
+
   return useQuery({
     queryKey,
     queryFn: async () => {
       const params = new URLSearchParams();
       if (filters?.category) params.append("category", filters.category);
       if (filters?.search) params.append("search", filters.search);
-      
+
       const res = await fetch(`${api.events.list.path}?${params.toString()}`, { credentials: "include" });
       if (!res.ok) throw new Error("Failed to fetch events");
       return api.events.list.responses[200].parse(await res.json());
@@ -42,7 +42,7 @@ export function useCreateEvent() {
         ...data,
         date: new Date(data.date).toISOString() // Zod coerce should handle this but being safe
       };
-      
+
       const res = await apiRequest("POST", api.events.create.path, payload);
       return api.events.create.responses[201].parse(await res.json());
     },

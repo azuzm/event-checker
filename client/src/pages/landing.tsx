@@ -12,14 +12,15 @@ export default function Landing() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white shadow-lg">
               <MapPin className="w-5 h-5" />
             </div>
-            <span className="font-bold text-xl font-display tracking-tight">LocalLoop</span>
+            <span className="font-bold text-xl font-display tracking-tight">Locana</span>
           </div>
           <div className="flex items-center gap-4">
-            <Link href="/api/login">
-              <Button className="font-semibold rounded-full px-6 btn-gradient">
-                Get Started
-              </Button>
-            </Link>
+            <Button
+              className="font-semibold rounded-full px-6 btn-gradient cursor-pointer"
+              onClick={() => window.location.href = "/api/login"}
+            >
+              Get Started
+            </Button>
           </div>
         </div>
       </nav>
@@ -37,13 +38,15 @@ export default function Landing() {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
             Connect with neighbors, find local events, and stay updated on what's happening right around the corner.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/api/login">
-              <Button size="lg" className="text-lg px-8 h-14 rounded-full btn-gradient">
-                Join Your Neighborhood <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="text-lg px-8 h-14 rounded-full btn-gradient cursor-pointer"
+              onClick={() => window.location.href = "/api/login"}
+            >
+              Join Your Neighborhood <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
           </div>
         </div>
       </section>
@@ -85,7 +88,7 @@ export default function Landing() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-border text-center text-muted-foreground text-sm">
-        <p>© 2024 LocalLoop. Building stronger communities together.</p>
+        <p>© 2024 Locana. Building stronger communities together.</p>
       </footer>
     </div>
   );

@@ -1,11 +1,11 @@
 import { Link, useLocation } from "wouter";
 import { useAuth } from "@/hooks/use-auth";
-import { 
-  Home, 
-  Calendar, 
-  Users, 
-  PlusCircle, 
-  User, 
+import {
+  Home,
+  Calendar,
+  Users,
+  PlusCircle,
+  User,
   LogOut,
   MapPin,
   Menu,
@@ -36,18 +36,18 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <MapPin className="w-6 h-6" />
           </div>
           <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 font-display">
-            LocalLoop
+            Locana
           </h1>
         </div>
 
         <nav className="space-y-2">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href}>
-              <div 
+              <div
                 className={cn(
                   "flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 cursor-pointer font-medium",
-                  location === item.href 
-                    ? "bg-primary/10 text-primary shadow-sm" 
+                  location === item.href
+                    ? "bg-primary/10 text-primary shadow-sm"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground"
                 )}
                 onClick={() => setIsMobileOpen(false)}
@@ -62,11 +62,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       <div className="mt-auto p-6 border-t border-border/50">
         <Link href="/profile">
-          <div 
+          <div
             className={cn(
               "flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 cursor-pointer mb-2",
-              location === "/profile" 
-                ? "bg-primary/10 text-primary" 
+              location === "/profile"
+                ? "bg-primary/10 text-primary"
                 : "text-muted-foreground hover:bg-muted hover:text-foreground"
             )}
             onClick={() => setIsMobileOpen(false)}
@@ -75,7 +75,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             Profile
           </div>
         </Link>
-        <button 
+        <button
           onClick={() => logout()}
           className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-destructive hover:bg-destructive/10 transition-colors font-medium"
         >
@@ -99,9 +99,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-white shadow-md">
             <MapPin className="w-5 h-5" />
           </div>
-          <span className="font-bold text-lg font-display">LocalLoop</span>
+          <span className="font-bold text-lg font-display">Locana</span>
         </div>
-        
+
         <Sheet open={isMobileOpen} onOpenChange={setIsMobileOpen}>
           <SheetTrigger asChild>
             <Button variant="ghost" size="icon">

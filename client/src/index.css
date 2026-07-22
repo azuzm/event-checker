@@ -12,11 +12,11 @@
   /* Primary: Electric Indigo */
   --primary: 250 84% 54%;
   --primary-foreground: 0 0% 100%;
-  
+
   /* Secondary: Soft Teal */
   --secondary: 170 57% 50%;
   --secondary-foreground: 0 0% 100%;
-  
+
   /* Accent: Coral/Orange for CTAs */
   --accent: 12 90% 63%;
   --accent-foreground: 0 0% 100%;
@@ -24,51 +24,53 @@
   /* Neutral tones */
   --background: 240 10% 98%;
   --foreground: 240 10% 3.9%;
-  
+
   --card: 0 0% 100%;
   --card-foreground: 240 10% 3.9%;
-  
+
   --popover: 0 0% 100%;
   --popover-foreground: 240 10% 3.9%;
-  
+
   --muted: 240 4.8% 95.9%;
   --muted-foreground: 240 3.8% 46.1%;
-  
+
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
   --border: 240 5.9% 90%;
   --input: 240 5.9% 90%;
   --ring: 250 84% 54%;
-  
+
   --radius: 1rem;
 }
 
 .dark {
   --background: 240 10% 3.9%;
   --foreground: 0 0% 98%;
-  
-  --card: 240 10% 8%; /* Slightly lighter than bg */
+
+  --card: 240 10% 8%;
+  /* Slightly lighter than bg */
   --card-foreground: 0 0% 98%;
-  
+
   --popover: 240 10% 3.9%;
   --popover-foreground: 0 0% 98%;
-  
-  --primary: 250 84% 64%; /* Lighter indigo for dark mode */
+
+  --primary: 250 84% 64%;
+  /* Lighter indigo for dark mode */
   --primary-foreground: 240 5.9% 10%;
-  
+
   --secondary: 170 57% 40%;
   --secondary-foreground: 0 0% 98%;
-  
+
   --muted: 240 3.7% 15.9%;
   --muted-foreground: 240 5% 64.9%;
-  
+
   --accent: 12 90% 63%;
   --accent-foreground: 0 0% 100%;
-  
+
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  
+
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
   --ring: 240 4.9% 83.9%;
@@ -80,7 +82,12 @@
     font-family: var(--font-sans);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     @apply font-bold tracking-tight text-foreground;
   }
@@ -90,11 +97,11 @@
   .glass-panel {
     @apply bg-white/70 dark:bg-black/30 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-xl;
   }
-  
+
   .card-hover {
     @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 border border-transparent hover:border-primary/10;
   }
-  
+
   .btn-gradient {
     @apply bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300;
   }
@@ -104,12 +111,15 @@
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   @apply bg-muted-foreground/20 rounded-full;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground/40;
 }
