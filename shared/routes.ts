@@ -1,9 +1,7 @@
 import { z } from 'zod';
 import { insertEventSchema, insertNoticeSchema, events, notices, attendees, insertAttendeeSchema } from './schema';
 
-// ============================================
-// SHARED ERROR SCHEMAS
-// ============================================
+
 export const errorSchemas = {
   validation: z.object({
     message: z.string(),
@@ -20,9 +18,6 @@ export const errorSchemas = {
   }),
 };
 
-// ============================================
-// API CONTRACT
-// ============================================
 export const api = {
   events: {
     list: {
