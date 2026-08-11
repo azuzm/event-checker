@@ -34,10 +34,9 @@ export class DatabaseStorage implements IStorage {
     if (filters?.category) {
       conditions.push(eq(events.category, filters.category));
     }
-    // Search could be ILIKE if we wanted to implement it, skipping for now or simple exact match
 
     if (conditions.length > 0) {
-      // @ts-ignore - simple condition composition
+
       return await query.where(and(...conditions)).orderBy(desc(events.date));
     }
 
