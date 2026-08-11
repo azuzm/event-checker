@@ -6,7 +6,7 @@ import { users, events, notices } from "@shared/schema";
 async function seed() {
   console.log("Seeding database...");
 
-  // Create a dummy user
+
   const organizerId = "user_seed_1";
   await authStorage.upsertUser({
     id: organizerId,

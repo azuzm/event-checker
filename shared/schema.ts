@@ -4,10 +4,10 @@ import { z } from "zod";
 import { relations } from "drizzle-orm";
 import { users } from "./models/auth";
 
-// Export auth models so they are included in the schema
+
 export * from "./models/auth";
 
-// === TABLE DEFINITIONS ===
+
 
 export const events = pgTable("events", {
   id: serial("id").primaryKey(),
