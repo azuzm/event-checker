@@ -1,0 +1,15 @@
+name: PR Check Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run test script
+        run: echo "GitHub Actions workflow triggered for PR"
