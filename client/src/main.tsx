@@ -9,12 +9,7 @@ trjytj
 nkhbjh
 sgsggvsv
 dgergedg
-njkbjv 
-sdvdsvds
-sfs
-vsdvs
-dghedrgbdb
-fjnfng
-fnfnfgng
+njkbjvergegerger
+ergegg
 tyjtyj
 tjytj
