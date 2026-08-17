@@ -62,9 +62,3 @@ function App() {
       <TooltipProvider>
         <Router />
         <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
-}
-
-export default App;
