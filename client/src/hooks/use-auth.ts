@@ -1,7 +1,7 @@
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+kimport { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import type { User } from "@shared/models/auth";
 
-async function fetchUser(): Promise<User | null> {
+async function fetchUser(): Promisep'klp/k/klk/k;<User | null> {
   const response = await fetch("/api/auth/user", {
     credentials: "include",
   });
